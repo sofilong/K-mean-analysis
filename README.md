@@ -27,5 +27,5 @@
   <li>Help you track your personal finance</li>
   <li>help you see cost saving opportunities by regulating your AC</li>
   <li>You can extend the scope of this analysis by using Linear Regression
-      to predict your monthly power expenditure</li>
+      to predict your next month power bill</li>
 </ul>
