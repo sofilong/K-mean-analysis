@@ -8,35 +8,46 @@ Set rng = Range("A1:A" & r)
 
 'looping through the range to find blank rows and remove them
 For Each cell In rng
-If cell.Value = "" Then
-cell.EntireRow.Select
-Selection.Delete shift:=xlUp
-Else
-
-End If
+    If cell.Value = "" Then
+        cell.EntireRow.Select
+        Selection.Delete shift:=xlUp
+    Else
+    
+    End If
 Next cell
 
 'refactoring the previous loop to remove duplicates by offsetting 1 column from current range
 For Each cell In rng
-'by using the property "offset" you can use the previous recursion method using same range by offsetting it just one column to the right
-If cell.Offset(0, 1).Value = " Regular Bill                                                " Then
-cell.EntireRow.Select
-Selection.Delete shift:=xlUp
-Else
-
-End If
+    'by using the property "offset" you can use the previous recursion method using same range by offsetting it just one column to the right
+    If cell.Offset(0, 1).Value = " Regular Bill                                                " Then
+        cell.EntireRow.Select
+        Selection.Delete shift:=xlUp
+    Else
+    
+    End If
 Next cell
 
 'Assigning attributes in upper cases to identify the dataset
 Range("A1").Value = "payment date"
 Range("A1").Value = UCase(Range("A1").Value)
+With Range("A1")
+    .Font.Color = RGB(0, 51, 102)  'Dark Blue
+    .Font.Bold = True
+End With
 
 Range("B1").Value = "description"
 Range("B1").Value = UCase(Range("B1").Value)
+With Range("B1")
+    .Font.Color = RGB(0, 51, 102)  'Dark Blue
+    .Font.Bold = True
+End With
 
 Range("C1").Value = "amount($)"
 Range("C1").Value = UCase(Range("C1").Value)
-
+With Range("C1")
+    .Font.Color = RGB(0, 51, 102)  'Dark Blue
+    .Font.Bold = True
+End With
 
 Range("A1").Select
 End Sub
