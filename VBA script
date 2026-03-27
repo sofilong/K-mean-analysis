@@ -18,7 +18,7 @@ Next cell
 
 'refactoring the previous loop to remove duplicates by offsetting 1 column from current range
 For Each cell In rng
-    'by using the property "offset" you can use the previous recursion method using same range by offsetting it just one column to the right
+'by using the property "offset" you can use the previous recursion method using same range by offsetting it just one column to the right
     If cell.Offset(0, 1).Value = " Regular Bill                                                " Then
         cell.EntireRow.Select
         Selection.Delete shift:=xlUp
