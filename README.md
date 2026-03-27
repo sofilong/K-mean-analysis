@@ -8,7 +8,7 @@
 
 <h2>How is this project useful?</h2>
 <p>
-  You don't have to know deep level of coding in order to perform this analysis. All you need is excel version (build/version 16.0.16818.2000) which has Pythin in the formula tab
+  You don't have to know deep level of coding in order to perform this analysis. All you need is excel version (build/version 16.0.16818.2000 - minimum) which has Python in the formula tab
 </p>
 
 <h2>What’s here</h2>
