@@ -10,7 +10,7 @@
 <h2>How is this project useful?</h2>
 <p>
   By knowing what's the outside temperature that affects your unit your can control your indoor temperature in the thermostat, ensure a good power consumption
-    while keeping an eye on your pocket (hence it helps you find savings opportunities).  
+    while keeping an eye on your pocket (hence it helps you find savings opportunities). <img src="K-mean analysis.png" alt="Dashboard viz"> 
 </p>
 
 <h2>What’s here</h2>
