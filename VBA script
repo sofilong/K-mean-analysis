@@ -1,0 +1,42 @@
+Sub data_normalization()
+
+Dim cell, rng As Range
+Dim r As Byte
+
+r = Cells(Rows.Count, "A").End(xlUp).Row 'to declare the last row
+Set rng = Range("A1:A" & r)
+
+'looping through the range to find blank rows and remove them
+For Each cell In rng
+If cell.Value = "" Then
+cell.EntireRow.Select
+Selection.Delete shift:=xlUp
+Else
+
+End If
+Next cell
+
+'refactoring the previous loop to remove duplicates by offsetting 1 column from current range
+For Each cell In rng
+'by using the property "offset" you can use the previous recursion method using same range by offsetting it just one column to the right
+If cell.Offset(0, 1).Value = " Regular Bill                                                " Then
+cell.EntireRow.Select
+Selection.Delete shift:=xlUp
+Else
+
+End If
+Next cell
+
+'Assigning attributes in upper cases to identify the dataset
+Range("A1").Value = "payment date"
+Range("A1").Value = UCase(Range("A1").Value)
+
+Range("B1").Value = "description"
+Range("B1").Value = UCase(Range("B1").Value)
+
+Range("C1").Value = "amount($)"
+Range("C1").Value = UCase(Range("C1").Value)
+
+
+Range("A1").Select
+End Sub
