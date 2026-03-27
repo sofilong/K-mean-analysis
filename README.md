@@ -3,18 +3,22 @@
 <p>
     Have you ever wonder why you're paying so much, or so little on your power bill? This Project intends to answer that question.
     By implementing machine learning (k-mean) you can segment outside temperature ranges to visualize the most Kw consumption in your unit
-    and what's the direct impact to your pocket ($). Knowing your power usage you can find savings opportunities.
+    and what's the direct impact to your pocket ($). You don't have to know deep level of coding in order to perform this analysis. 
+    All you need is excel version (build/version 16.0.16818.2000 - minimum) which has Python in the formula tab.
     </p>
 
 <h2>How is this project useful?</h2>
 <p>
-  You don't have to know deep level of coding in order to perform this analysis. All you need is excel version (build/version 16.0.16818.2000 - minimum) which has Python in the formula tab
+  By knowing what's the outside temperature that affects your unit your can control your indoor temperature in the thermostat, ensure a good power consumption
+    while keeping an eye on your pocket (hence it helps you find savings opportunities).  
 </p>
 
 <h2>What’s here</h2>
 <ul>
   <li><code>/data/</code> – Power Bill Analysis.xlsm</li>
-  <li><code>/data/</code> - VBA script to perform ETL on webscrapped data</li>
+  <li><code>/data/</code> - VBA script (text file) to perform ETL on webscrapped data</li>
+  <li><code>/data/</code> - PDF showing the Power automate workflows to webscrap data</li>
+
 
 </ul>
 
